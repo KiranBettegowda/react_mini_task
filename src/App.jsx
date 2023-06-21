@@ -28,10 +28,10 @@ const App = () => {
         fetchData();
     }, []);
   return (
-    <div >
+    <div id='outerDiv'>
         <h2 id='start'>{data.map((hello)=>{
             return(
-                <div id='divBlock' key={hello.level}>
+                <div key={hello.level}>
                     <h2>{hello.amount}</h2>
                     <h3>{hello.level}</h3>
                     <h3>{hello.frquency}</h3>
